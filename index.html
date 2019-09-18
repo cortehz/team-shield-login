@@ -4,23 +4,146 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Login - Team Shield</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
-<body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <style type="text/css">
+      body {
+        background: url(https://res.cloudinary.com/code-shield/image/upload/v1568794028/background_tsnxu0.jpg);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .sign-in a[href="index.html"] {
+        font-weight: bolder;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="limiter">
+      <div class="form-container">
+        <!--Form Structure Starts-->
+        <form id="form" required>
+          <!--Logo Starts-->
+          <span class="title p-b-30">
+            <img
+              class="logo"
+              src="https://res.cloudinary.com/code-shield/image/upload/v1568794181/logo_ijvxw4.png"
+            />
+          </span>
+          <!--Logo Ends-->
+
+          <!--Signup/Login button in the corner structures starts here-->
+          <div class="sign-in p-b-15">
+            <a href="index.html">Sign In</a> | <a href="signup.html">Sign Up</a>
+          </div>
+          <!--Signup/Login button in the corner structures ends here-->
+
+          <!--Username Input and It's Icons, Label...-->
+          <div class="input-div validate-input" data-validate="Email required">
+            <!-- <span class="input-label"></span> --><!--In case, if the user need it.-->
+            <input
+              id="emailaddress"
+              class="input"
+              type="text"
+              name="email"
+              placeholder="E-mail Address"
+              required
+            />
+          </div>
+
+          <!--Password Input and It's Icons, Label...-->
+          <div
+            class="input-div validate-input"
+            data-validate="Password required"
+          >
+            <input
+              id="password"
+              class="input"
+              type="Password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <!--Log in button/submit and its containers...-->
+          <div class="container-form-btn p-b-5">
+            <div class="wrap-form-btn">
+              <button
+                id="submitBtn"
+                class="form-btn"
+                type="submit"
+                name="submit"
+                value="send"
+                class="submit-button"
+              >
+                Log in
+              </button>
+            </div>
+          </div>
+          <!--Log in Button structure ends here-->
+
+          <!--Checkbox Input (Remember Me)-->
+          <label class="check-container"
+            >Remember Me
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <!--Forgot Password Div and its link-->
+          <div class="text-right" id="div-forgot-password">
+            <a href="forget.html" id="forgotpassword"
+              ><!--Remove "#" and past your link or page.-->
+              Forget Password?
+            </a>
+          </div>
+
+          <!--Sign in Or Sign up options header-->
+          <div class="txt1 text-center">
+            <span>
+              Or Sign In <span style="color:#12A6FA">|</span> Up Using
+            </span>
+          </div>
+
+          <!--Social Media Icons for signing up or signing in:-->
+          <div class="flex-c-m">
+            <a href="#" class="login100-social-item">
+              <img
+                src="https://res.cloudinary.com/code-shield/image/upload/v1568793935/index_acggv2.png"
+              />
+            </a>
+
+            <a href="#" class="login100-social-item">
+              <img
+                src="https://res.cloudinary.com/code-shield/image/upload/v1568793849/dex_kkza4b.png"
+              />
+            </a>
+
+            <a href="#" class="login100-social-item">
+              <img
+                src="https://res.cloudinary.com/code-shield/image/upload/v1568793887/Ellipse_2_rnwlsw.png"
+              />
+            </a>
+          </div>
+          <!--Social Media Icons structres ends here-->
+        </form>
+        <!--Form Structure Starts-->
+      </div>
+      <!--Form-Container or all Elements covered in form (Elements after Sidewallpaper) Starts-->
+    </div>
+    <!--Limiter Div structure ends.-->
 
     <script src="" async defer></script>
-</body>
-
+  </body>
 </html>
