@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login - Team Shield</title>
+    <title>--Sign Up - Team Shield</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!--Following CSS files are connected to this HTML file, externally.-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-	<link rel="stylesheet" type="text/css" href="style/util.css">
-    
+        
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
     
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,18 +19,18 @@
     
 </head>
 <style type="text/css">
-    .sign-in a[href="index.html"]{
+    .sign-in a[href="signup.html"]{
         font-weight: bolder;
         color: white;
     }
 </style>
 <body>
-    <!--In case, if the user wanted to move all elements from one place to one place, then simply copy and past the limiter tag with elements inside. We also created the limiter div for responsive design or if the user wanted to set width or height optionally.-->
+    <!--In case, if the user wanted to move all elements from one place to one place, then simply copy and past the "limiter" div with elements inside. We also created the limiter div for responsive design or if the user wanted to set width or height optionally.-->
 	<div class="limiter">
 
-		<div class="form-container">
+        <!--Form-Container or all Elements covered in form (Elements after Sidewallpaper) Starts-->
+        <div class="form-container">
 
-            <!--Form Structure Starts-->
             <form id="form">
 
                 <!--Logo Starts-->
@@ -40,6 +38,7 @@
                            <img class="logo" src="https://res.cloudinary.com/code-shield/image/upload/v1568794181/logo_ijvxw4.png">
                 </span>
                 <!--Logo Ends-->
+
                 
                 <!--Signup/Login button in the corner structures starts here-->
                 <div class="sign-in">
@@ -48,9 +47,15 @@
                 <!--Signup/Login button in the corner structures ends here-->
 
                 <!--Username Input and It's Icons, Label...-->
+                <div class="input-div validate-input" data-validate="Fullname required">
+                    <!-- <span class="input-label"></span> --><!--In case, if the user need it.-->
+                    <input id="fullname" class="input" type="text" name="fullname" placeholder="Full Name">
+                </div>
+
+                <!--Email Input and It's Icons, Label, Span...-->
                 <div class="input-div validate-input" data-validate="Email required">
                     <!-- <span class="input-label"></span> --><!--In case, if the user need it.-->
-                    <input id="emailaddress" class="input" type="text" name="email" placeholder="E-mail Address">
+                    <input id="emailaddress" class="input" type="text" name="email" placeholder="E-Mail">
                 </div>
 
                 <!--Password Input and It's Icons, Label...-->
@@ -59,58 +64,51 @@
                     <input id="password" class="input" type="Password" name="password" placeholder="Password">
                 </div>
 
+                <!--Confirm Password Input and It's Icons, Label...-->
+                <div class="input-div validate-input" data-validate="Password required">
+                    <!--<span class="input-label">Confirm Password:</span>-->
+                    <input id="passwordC" class="input" type="Password" name="passwordC" placeholder="Confirm Password:">
+                </div> 
+
                 <!--Log in button/submit and its containers...-->
                 <div class="container-form-btn">
                     <div class="wrap-form-btn">
                         <button id="submitBtn" class="form-btn" type="button">
-                            Log in
-                        </button>
+                                Sign Up
+                            </button>
                     </div>
                 </div>
                 <!--Log in Button structure ends here-->
 
-                <!--Checkbox Input (Remember Me)--> 
-                    <label class="check-container">Remember Me
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-
-                <!--Forgot Password Div and its link-->
-                <div class="text-right" id="div-forgot-password">
-                    <a href="forget.html" id="forgotpassword"><!--Remove "#" and past your link or page.-->
-                        Forget Password?
-                    </a>
-                </div>
-
                 <!--Sign in Or Sign up options header-->
                 <div class="txt1 text-center">
                     <span>
-                        Or Sign In <span style ="color: #12A6FA">|</span> Up Using
+                        Or Sign In <span style ="color: #12A6FA;">|</span> Up Using
                     </span>
                 </div>
-                
+
                 <!--Social Media Icons for signing up or signing in:-->
                 <div class="flex-c-m smicons">
                     <a href="#" class="login100-social-item bg1">
                         <i class="fa fa-facebook"></i>
                     </a>
 
-                    <a href="#" class="login100-social-item bg3">
-                        <i class="fa fa-google"></i>
-                    </a>
-
                     <a href="#" class="login100-social-item bg2">
                         <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="login100-social-item bg3">
+                        <i class="fa fa-google"></i>
                     </a>
                 </div>
                 <!--Social Media Icons structres ends here-->
             </form>
                 <!--Form Structure Starts-->
         </div>
-        <!--Form-Container or all Elements covered in form (Elements after Sidewallpaper) Starts-->
-	</div>
+        <!--Form-Container or all Elements covered in form (Elements after Sidewallpaper) Ends-->
+    </div>
     <!--Limiter Div structure ends.-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/script/script.js"></script><!--External JavaScript Files Connected with this HTML-->
+<script type="text/javascript" src="assets/script/script2.js"></script><!--External JavaScript Files Connected with this HTML-->
 </body>
 </html>

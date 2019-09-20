@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+	  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Check - Team Shield</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{ 
+  text-align:center; font-family: calibri, 'Helvetica Neue', Helvetica, sans-serif;
+  background: rgba(20, 38, 50, 1);
+  overflow: hidden;
+}
+/*Holder of everything*/
+.limiter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*Checkmark Cricle Style (The check inside the Circle)*/
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #12A6FA;;
+  fill: none;
+  animation: strokecircle 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+/*The Check Mark*/
+.checkmark {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #FFF;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+/*The check Mark Animation*/
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: stroke 0.3s forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes strokecircle {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stroke {
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 10px #12A6FA;
+  }
+}
+
+/*Global Class*/
+.txt1{
+  color: white;
+  font-size:26px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*Global Class*/
+.txt2{
+  color: whitesmoke;
+  font-size: 19px;
+}
+
+/*Global Class*/
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Global Hover*/
+a:hover{
+  color: skyblue;
+}
+
+/*Sign in/up button in the corner of Forget.html*/
+.sign-in-forget{
+  display: inline-block;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*Sign in/up button in the corner inside a tag style of Forget.html*/
+.sign-in-forget a {
+  border: 1px solid #FFF;
+  padding: 5px 20px;
+  border-radius: 7px;
+  border-top-right-radius: 0px;
+  font-family: Calibri;
+  color: white;
+}
+
+/*Sign in/up button in the corner when it is hoverd of Forget.html*/
+.sign-in-forget a:hover{
+  box-shadow: 0 1px 7px white;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<!--Signup/Login button in the corner structures starts here-->
+<div class="sign-in-forget">
+        <a href="index.html">Sign In</a>
+</div>
+<!--Signup/Login button in the corner structures ends here-->
+
+<div class="limiter">
+  <!--The Check Mark and Circle Structures Starts-->
+  <svg class="checkmark" viewBox="0 0 52 52">
+  	<circle class="checkmark-circle" fill="none" cx="26" cy="26" r="25" />
+  	<path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+  </svg>
+  <!--The Check Mark and Circle Structures Ends-->
+
+  <span class="txt1">Check your inbox hi@HNG 6.0 Internship.com</span>
+
+  <span class="txt2 p-t-30"> Unsure if that email was correct? <a href="index.html">Click here</a></span>
+</div>
+</body>
+</html>
