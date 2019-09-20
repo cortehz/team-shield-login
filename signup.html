@@ -31,7 +31,7 @@
         <!--Form-Container or all Elements covered in form (Elements after Sidewallpaper) Starts-->
         <div class="form-container">
 
-            <form method="post" action="register.php" id="form">
+            <form method="post" action="register.php" id="form" onsubmit="errorCheck(event)">
 
                 <!--Logo Starts-->
                 <span class="title">
@@ -45,7 +45,7 @@
                     <a href="index.html">Sign In</a> | <a href="signup.html">Sign Up</a>
                 </div>
                 <!--Signup/Login button in the corner structures ends here-->
-
+ 
                 <!--Username Input and It's Icons, Label...-->
                 <div class="input-div validate-input" data-validate="Fullname required">
                     <!-- <span class="input-label"></span> --><!--In case, if the user need requiredit.required-->
