@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reset password - Team Shield</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Following CSS files are connected to this HTML file, externally.-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--External CSS Files ends here-->
+    
+</head>
+<body>
+    <!--In case, if the user wanted to move all elements from one place to one place, then simply copy and past the limiter tag with elements inside. We also created the limiter div for responsive design or if the user wanted to set width or height optionally.-->
+	<div class="limiter">
+        <div class="form-container">
+
+            <form id="form">
+            <!--Logo Starts-->
+            <span class="title p-b-40">
+                       <img class="logo" src="https://res.cloudinary.com/code-shield/image/upload/v1568794181/logo_ijvxw4.png">
+            </span>
+            <!--Logo Ends-->
+
+            <!--Username Input and It's Icons, Label...-->
+            <div class="input-div validate-input" data-validate="Enter Code">
+                <input id="emailaddress" class="input" type="text" name="email" placeholder="Enter Your Code">
+                <span id="passwordId" class="input-focus"></span>
+                <!--Remember: The data-symbol gets the label/input icon-->
+            </div>
+
+            <!--Log in button/submit and its containers...-->
+            <div class="container-form-btn">
+                <div class="wrap-form-btn">
+                    <button id="submitBtn" class="form-btn" type="button">
+                        CONFIRM
+                    </button>
+                </div>
+            </div>
+            <!--Log in Button structure ends here-->
+
+            <div class="codeDiv">
+                <a href="#" class="txt1">Didn't get the code?</a>
+            </div>
+
+            </form>
+        </div>
+	</div>
+    <!--Limiter Div structure ends.-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/script/script.js"></script><!--External JavaScript Files Connected with this HTML-->
+</body>
+</html>
